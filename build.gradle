@@ -30,3 +30,12 @@ dependencies {
 application {
     mainClass = 'com.adjectivecolournoun.gradle.Greetz'
 }
+
+//
+// Add this at the end of the file
+//
+task printJavaVersion {
+    doLast {
+        println "Running Gradle on Java version: ${System.getProperty('java.version')}"
+    }
+}
